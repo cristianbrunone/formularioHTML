@@ -1,0 +1,111 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    #formulario {
+        background-color: #fff;
+        padding: 20px;
+        max-width: 600px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+
+    h2 {
+        color: #555;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    legend {
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Inscrição para o Evento Tech 2024</h1>
+    <h2>Complete o formulário abaixo para se inscrever no evento</h2>
+    <form id="formulario">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            Nome: <input type="text"> <br>
+            Email: <input type="email"> <br>
+            Senha: <input type="password"> <br>
+            Idade: <input type="number"> <br>
+            Data de nascimento: <input type="date" min="1900-01-01" max="2024-03-05">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências de Evento</legend>
+            <label for="preferencias_evento">Selecione suas preferências:</label><br>
+            <select id="preferencias_evento" name="preferencias_evento">
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+            </select><br>
+
+            <label>Workshops:</label><br>
+
+            <input type="checkbox" id="Desenvolvimento Web Moderno" name="Desenvolvimento Web Moderno">
+            <label for="Desenvolvimento Web Moderno"> Desenvolvimento Web Moderno</label><br>
+
+            <input type="checkbox" id="Introdução á Inteligencia Artificial" name="Introdução á Inteligencia Artificial">
+            <label for="Introdução á Inteligencia Artificial"> Introdução á Inteligencia Artificial</label><br>
+
+            <input type="checkbox" id="Segurança na internet" name="Segurança na internet">
+            <label for="Segurança na internet"> Segurança na internet</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submissão de Apresentação</legend>
+            <label for="apresentacao">Envie sua apresentação:</label><br>
+            <input type="file" id="apresentacao" name="apresentacao"><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar inscrição">
+        <p>2024 Evento Tech. Todos os direitos reservados.</p>
+    </form>
+</body>
